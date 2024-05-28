@@ -1,0 +1,140 @@
+* {
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(275, 100%, 97%);
+  position: relative;
+  font-family: "Work Sans", sans-serif;
+  line-height: 1.5em;
+  height: 200px;
+}
+
+img {
+  overflow: hidden;
+  height: 100%;
+  max-width:  100%;
+}
+.container {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  z-index: 1;
+  max-width: 600px;
+  background-color: hsl(0, 0%, 100%);
+  padding:30px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; /* Add relative positioning */
+  top: -100px; /* Adjust the top position as needed */
+}
+
+.content {
+  display: none;
+}
+
+.minus {
+  display: inline-block;
+}
+
+.title {
+  margin-bottom:20px;
+}
+.heading-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  align-items: center;
+}
+
+.faq {
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.question-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.question-icon p {
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.question-icon p:hover {
+  color: hsl(292, 70%, 38%);
+  cursor: pointer;
+}
+
+.minus {
+  display: none;
+  cursor: pointer;
+}
+.icon {
+  cursor: pointer;
+}
+
+.content p {
+  color: hsl(292, 16%, 49%);
+  font-size: 14px;
+  width: 85%;
+}
+
+hr {
+  border: 1px solid rgb(241, 241, 241); /* Set border to solid green with a width of 2px */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+hr:last-child {
+  display: none;
+}
+
+.image-svg {
+  display: none;
+}
+hr:last-child {
+  display: none;
+}
+
+
+@media screen and (max-width: 375px) {
+
+
+  img {
+    display: none;
+  }
+
+  .image-svg {
+    display: block;
+  }
+
+  .container{
+    position: relative;
+    top:-90px;
+    max-width:80% ;
+  }
+
+  .question-icon p {
+    font-size: 10px;
+    font-weight: 500;
+    width: 75%;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .content p {
+    color: gray;
+    font-size: 10px;
+    width: 80%;
+  }
+
+}
