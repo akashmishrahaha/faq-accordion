@@ -79,6 +79,12 @@ img {
   cursor: pointer;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+
 .content p {
   color: hsl(292, 16%, 49%);
   font-size: 14px;
@@ -104,8 +110,6 @@ hr:last-child {
 
 
 @media screen and (max-width: 375px) {
-
-
   img {
     display: none;
   }
@@ -114,15 +118,15 @@ hr:last-child {
     display: block;
   }
 
-  .container{
+  .container {
     position: relative;
-    top:-90px;
-    max-width:80% ;
+    top: -90px;
+    max-width: 80%;
   }
 
-  .question-icon p {
+  .question-icon p,
+  .content p {
     font-size: 10px;
-    font-weight: 500;
     width: 75%;
   }
 
@@ -130,11 +134,32 @@ hr:last-child {
     width: 30px;
     height: 30px;
   }
+}
 
-  .content p {
-    color: gray;
-    font-size: 10px;
-    width: 80%;
+@media screen and (max-width: 768px), (max-width: 1024px) {
+  img {
+    display: block;
+    width: 100%;
   }
 
+  .image-svg {
+    display: none;
+  }
+
+  .container {
+    position: relative;
+    top: -90px;
+    max-width: 50%;
+  }
+
+  .question-icon p,
+  .content p {
+    font-size: 10px;
+    width: 75%;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
 }
